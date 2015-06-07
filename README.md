@@ -24,6 +24,7 @@ Example
 --
 Check the example folder on how to use it to load a GIF, a APNG (or animated PNG) and how to use it to load images from the Camera Roll successfully using the `ALAsset` object and a `CGDataProviderRef`
 
+![image](https://raw.githubusercontent.com/Julioacarrettoni/Dev_Jac-AnimatedImages/master/Example/Example/example_screenshot.png)
 
 License
 --
