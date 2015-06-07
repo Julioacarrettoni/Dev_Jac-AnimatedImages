@@ -1,2 +1,34 @@
 # Dev_Jac-AnimatedImages
 Simple category to load animated image files into an UIImageView.
+It currently support GIF and APNG (Animated PNG, or Animated Portable Network Graphic) http://es.wikipedia.org/wiki/Animated_Portable_Network_Graphics
+
+Usage
+--
+Just add the category to your project (_Cocopods support comming soon_)
+
+It adds the following methods to UIIMageView:
+
+```objc
+- (void) loadAnimatedPNGFromPath:(NSString*) path;
+- (void) loadAnimatedPNGData:(NSData*) data;
+- (void) loadAnimatedPNGFromALAsset:(ALAsset*) asset;
+- (void) loadAnimatedPNGFromPathCGImageSourceRef:(CGImageSourceRef) isrc;
+```
+Invoking any of those into a `UIImageView` object will populate the required UIImageView properties:
+
+- animationImages 
+- animationDuration
+- animationRepeatCount
+
+Example
+--
+Check the example folder on how to use it to load a GIF, a APNG (or animated PNG) and how to use it to load images from the Camera Roll successfully using the `ALAsset` object and a `CGDataProviderRef`
+
+
+License
+--
+MIT (check the included Licese file in the repo)
+
+Issues / Fork / Comments
+--
+Always welcome (on the right of the interface)
